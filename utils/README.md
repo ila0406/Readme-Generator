@@ -1,11 +1,11 @@
 {
-  "projectTitle": "f",
-  "description": "f",
-  "instructions": "f",
-  "usageInfo": "f",
-  "contributionGuide": "s",
-  "testInstructions": "s",
+  "projectTitle": "readme generator",
+  "description": "It creates a high-quality professional README ",
+  "instructions": "Run node.js",
+  "usageInfo": "Use it to create a readme",
+  "contributionGuide": "none",
+  "testInstructions": "none",
   "license": "MIT",
-  "githubUsername": "",
-  "email": "f"
+  "githubUsername": "ila0406",
+  "email": "ila0406@gmail.com"
 }

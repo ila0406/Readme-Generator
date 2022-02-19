@@ -6,48 +6,48 @@ const fs = require('fs');
 const questions = [
     {
         type: 'input',
-        message: 'Project Title',
+        message: 'What is the title of your project?',
         name: 'projectTitle'
      },
      {
         type: 'input',
-        message: 'Description?',
+        message: 'Please provide a description of what your project does:',
         name: 'description'
      },
      {
         type: 'input',
-        message: 'Installation Instructions',
+        message: 'Please provide installation instructions:',
         name: 'instructions'
      },
      {
         type: 'input',
-        message: 'Usage Information',
+        message: 'Please provide usage information:',
         name: 'usageInfo'
      },
      {
         type: 'input',
-        message: 'Contribution Guidelines',
+        message: 'Please provide contribution guidelines:',
         name: 'contributionGuide'
      },
      {
         type: 'input',
-        message: 'Test Instructions',
+        message: 'Please provide test instructions:',
         name: 'testInstructions'
      },
      {
         type: 'list',
-        message: 'License',
+        message: 'Which of the these licenses would you like to use?',
         name: 'license',
         choices: ['MIT','Apache','Unlicense']
      },
      {
         type: 'input',
-        message: 'GitHub Username',
+        message: 'What GitHub Username would you like included in the Questions section?',
         name: 'githubUsername'
      },
      {
         type: 'input',
-        message: 'Email address',
+        message: 'What Email address would you like included in the Questions section?',
         name: 'email'
      }
 ];
@@ -65,7 +65,8 @@ function init() {
     inquirer.prompt(questions)
         .then(answers => {
             console.log(answers)
-            writeToFile('./utils/README.md',answers);
+            // writeToFile('./utils/README.md',answers);
+            writeToFile('../../Generated-Readme/README.md',answers);
         }
     );
 }
