@@ -1,22 +1,10 @@
-// // TODO: Create a function that returns a license badge based on which license is passed in
-// // If there is no license, return an empty string
-// function renderLicenseBadge(license) {}
-
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
-
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 const generateMarkdown = ({ projectTitle, description, techUsed, installation, usageInfo, contributionGuide, testInstructions, license, githubUsername, email, screenshots }) =>
 `# ${projectTitle}
 
-## <a id='license' href='#readme-badges'><img id='usage' src='https://i.imgur.com/DXcZdGv.png' style='height: 40px'></a> [![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
+[![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
 
-## <a href='#readme-badges'><img id='usage' src='https://github.com/teamjuli0/readme-badges/blob/main/themes/clean-dark/menu-categories/table-of-context.png?raw=true' style='height: 40px'></a>
+## <a href='#readme-badges'><img id='usage' src='https://i.imgur.com/mIa9BIm.png' style='height: 40px'></a>
 * [Description](#description)
 * [Technolgies Used](#technolgies-used)
 * [Installation Instructions](#installation-instructions)
@@ -45,13 +33,15 @@ ${contributionGuide}
 ${testInstructions}
 
 ## <a id='screenshots' href='#readme-badges'><img id='usage' src='https://i.imgur.com/WaoO6zA.png' style='height: 40px'></a>
-${screenshots}
+Mockup<br>
+<a id='screenshots' href='#readme-badges'><img id='usage' src='https://i.imgur.com/${screenshots}.png' style='height: 400px'></a>
 
-## <a href='#readme-badges'><img id='usage' src='https://github.com/teamjuli0/readme-badges/blob/main/themes/clean-dark/menu-categories/questions-alt.png?raw=true' style='height: 40px'></a>
+## <a id='questions' href='#readme-badges'><img id='usage' src='https://github.com/teamjuli0/readme-badges/blob/main/themes/clean-dark/menu-categories/questions-alt.png?raw=true' style='height: 40px'></a>
 If you have questions, you can either open a issue in my Github repository <br>
-GitHub Username: ${githubUsername} <br>
+GitHub: <https://github.com/${githubUsername}> <br>
+<br>
 Or you can send me an email directly <br>
-Email: ${email}
+Email: <${email}>
 `;
 
 module.exports = generateMarkdown;

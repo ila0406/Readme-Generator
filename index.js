@@ -1,10 +1,10 @@
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -58,12 +58,12 @@ const questions = [
      },
      {
         type: 'input',
-        message: 'Would you like to include screenshots?',
+        message: 'Would you like to include screenshots? If so, include the image name on imgur.com',
         name: 'screenshots'
      }
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
    // fs.writeFile(fileName, JSON.stringify(data,null ,2), function(err) {
     fs.writeFile(fileName, generateMarkdown(data), function(err) { 
@@ -72,7 +72,7 @@ function writeToFile(fileName, data) {
 }
 
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then(answers => {
