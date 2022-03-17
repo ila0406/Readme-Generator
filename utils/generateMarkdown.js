@@ -2,6 +2,10 @@
 const generateMarkdown = ({ projectTitle, description, techUsed, installation, usageInfo, contributionGuide, testInstructions, license, githubUsername, email, screenshots }) =>
 `# ${projectTitle}
 
+## GitHub Repository & Deployed Application
+* https://github.com/ila0406/xxxxxxxx
+* https://xxxxxxxx.herokuapp.com/
+
 [![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
 
 ## <a href='#readme-badges'><img id='usage' src='https://i.imgur.com/mIa9BIm.png' style='height: 40px'></a>
@@ -36,7 +40,7 @@ ${testInstructions}
 Mockup<br>
 <a id='screenshots' href='#readme-badges'><img id='usage' src='https://i.imgur.com/${screenshots}.png' style='height: 400px'></a>
 
-## <a id='questions' href='#readme-badges'><img id='usage' src='https://github.com/teamjuli0/readme-badges/blob/main/themes/clean-dark/menu-categories/questions-alt.png?raw=true' style='height: 40px'></a>
+## <a id='questions' href='#readme-badges'><img id='usage' src='https://imgur.com/Z3i069z.png' style='height: 40px'></a>
 If you have questions, you can either open a issue in my Github repository <br>
 GitHub: <https://github.com/${githubUsername}> <br>
 <br>
